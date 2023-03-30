@@ -9,11 +9,7 @@
 </head>
 
 <body>
-    {% include "head/header.html"%} {% for x in data %}
-    <p>
-        {{ x.name }} {{ x.surname }}
-    </p>
-    {% endfor %}
+    {% include "head/header.html" %} {% block content %} {% endblock %}
 </body>
 
 </html>
