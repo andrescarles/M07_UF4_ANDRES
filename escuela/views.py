@@ -30,7 +30,7 @@ def profes(request):
 
 def profes2(request, nombre):
     one = {"data":[]}
-    context = {"data"[{"name":"Roger", "surname":"Sobrino",},{"name":"Juan", "surname":"Dolores",},{"name":"Pepe", "surname":"Montoya",}]}
+    context = {"data":[{"name":"Roger", "surname":"Sobrino",},{"name":"Juan", "surname":"Dolores",},{"name":"Pepe", "surname":"Montoya",}]}
     
     for i in context["data"]:
        if i["name"] == nombre:
