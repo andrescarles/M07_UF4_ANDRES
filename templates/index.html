@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    {% include "head/header.html" %} {% block content %} {% endblock %}
+    {% include "head/header.html" %}
+    <a href="{% url 'formulario' %}">Añadir Objecto</a> {% block content %} {% endblock %}
 </body>
 
 </html>

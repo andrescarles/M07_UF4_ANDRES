@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader, Context
+from .form  import objeto
 
 def index(request):
     return render(request,'index.html')
@@ -37,3 +38,8 @@ def profes2(request, nombre):
         one["data"].append(i)
 
     return render(request,'profes.html',one)
+
+def formulario(request):
+    form = objeto()
+    context = {'form':form}
+    return render(request,'form.html',context)
