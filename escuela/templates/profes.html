@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    {% extends 'index.html' %} {% block content %} {% for x in data %} {% if data|length == 1 %}
+    {% extends 'index2.html' %} {% block content %} {% for x in data %} {% if data|length == 1 %}
     <p>{{ x.name }} {{ x.surname }}</p>
-    <a href="{% url 'profesores' %}"> Go Back </a> {% else %}
+    <a href="{% url 'update-profe' %}"> Go Back </a> {% else %}
     <p>
-        <a href="{% url 'profesores' x.name %}"> {{ x.name }} {{ x.surname }} </a>
+        <a href="{% url 'update-profe' x.name %}"> {{ x.name }} {{ x.surname }} </a>
     </p>
     {% endif %} {% endfor %} {% endblock %}
 </body>

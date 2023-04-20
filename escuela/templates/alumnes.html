@@ -11,9 +11,9 @@
 <body>
     {% extends 'index.html' %} {% block content %} {% for x in data %} {% if data|length == 1 %}
     <p>{{ x.name }} {{ x.surname }}</p>
-    <a href="{% url 'alumnos' %}"> Go Back </a> {% else %}
+    <a href="{% url 'update-alumno' %}"> Go Back </a> {% else %}
     <p>
-        <a href="{% url 'alumnos' x.name %}"> {{ x.name }} {{ x.surname }} </a>
+        <a href="{% url 'formulario_alumno' x.name %}"> {{ x.name }} {{ x.surname }} </a>
     </p>
     {% endif %} {% endfor %} {% endblock %}
 </body>
